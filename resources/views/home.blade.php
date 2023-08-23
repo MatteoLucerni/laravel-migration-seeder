@@ -11,7 +11,16 @@
 </head>
 
 <body>
-    <h1>TEST</h1>
+    <h1>TRENI</h1>
+    <ul>
+        @forelse ($trains as $train)
+            <li>
+                <h1>{{ $train->agency }}</h1>
+            </li>
+        @empty
+            <h1>Nessun treno disponibile</h1>
+        @endforelse
+    </ul>
 </body>
 
 </html>
