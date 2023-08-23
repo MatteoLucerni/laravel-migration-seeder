@@ -38,7 +38,7 @@
             </thead>
             <tbody>
                 @forelse ($trains as $train)
-                    <tr scope="row">
+                    <tr>
                         <td>
                             {{ $train->train_code }}
                         </td>
